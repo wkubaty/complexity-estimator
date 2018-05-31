@@ -1,6 +1,6 @@
 # Complexity Estimator
 
-This program is estimating complexity of algorithm, comparing executing times for vary sizes of problem. It is assumed that the greater size is, the more time it takes. Additionally program estimates execution time for given size of problem and in reverse - whats the estimating size of problem, it can be solved in a specified time.
+This program is estimating complexity of a given function, comparing executing times for vary sizes of problem. It is assumed that the greater size is, the more time it takes. Additionally program estimates execution time for given size of a problem and in reverse - what's the estimating size of problem, it can be solved in a specified time.
 
 ## How to use
 Required python 3
@@ -23,7 +23,7 @@ or install from PyPI:
     >>> main.run_example() to get example estimating
 ```
 ### Estimate complexity your own module
-4. Type: main.run([module], [size1], [size2], [sizeToCheckTime],[timeToCheckSize], [timeout=30])
+4. Type: main.run([module], [size1], [size2], [sizeToCheckTime], [timeToCheckSize], [timeout=30])
 
 
 * module - name of module you want to test out. It needs to have a special structure containing 3 functions:
@@ -37,5 +37,5 @@ or install from PyPI:
 * timeToCheckSize - the time within the specified problem can be resolved
 * timeout - optional function when you can set the maximum time of calculating. Default it is set to 30 seconds. It is not recommended to setting up a lower timeout.
 The best complexity estimating result is when it takes at least a few seconds to calculate.
-For the small sizes,the difference can be unnoticeable that results inaccurate complexity measurements. If so try to increase the size of problems.
+For the small sizes, time execution differences can be unnoticeable, which results inaccurate complexity measurements. If so, try to increase the size of the problems.
 
